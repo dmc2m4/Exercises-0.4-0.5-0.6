@@ -3,7 +3,7 @@ sequenceDiagram
     participant server
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-    browser->>server: payload: {note: test}
+    browser->>server: payload: {note: Test}
     activate server
     server-->>browser: Status Code: 302
     server-->>browser: Response Header: {Location: /exampleapp/notes}
